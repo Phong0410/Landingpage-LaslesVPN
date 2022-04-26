@@ -23,12 +23,11 @@ html {
 }
 
 .wrapper {
-  width: 1440px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 #first-section {
-  padding: 0 150px;
   background-color: #ffffff;
   position: relative;
   z-index: 0;
@@ -203,7 +202,7 @@ html {
 #first-section .content .content__img {
   position: absolute;
   top: 0px;
-  right: -50px;
+  right: -10px;
   width: 610px;
 }
 
@@ -347,7 +346,6 @@ html {
 
 #second-section {
   width: 100%;
-  padding: 0 150px;
   background-color: #fbfbfb;
 }
 
@@ -476,5 +474,56 @@ html {
 #second-section .plans .plans__option .plans__list .plans__item:hover .plans__item-button:hover {
   background-color: #f53855;
   color: white;
+}
+
+#second-section .scale {
+  width: 100%;
+  text-align: center;
+}
+
+#second-section .scale .scale__heading {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+  max-width: 380px;
+  margin: 20px auto;
+}
+
+#second-section .scale .scale__subheading {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  max-width: 555px;
+  margin: 20px auto;
+}
+
+#second-section .scale .scale__subheading span {
+  font-weight: 500;
+}
+
+#second-section .scale .scale__img {
+  width: 1060px;
+  margin-top: 155px;
+}
+
+#second-section .scale .sponsored {
+  width: 1135px;
+  height: 210px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#second-section .scale .sponsored .sponsored__img {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
