@@ -22,6 +22,7 @@ html {
     background-color: unset;
     border: unset;
     outline: unset;
+    cursor: pointer;
 }
 
 .primary-button {
@@ -31,9 +32,9 @@ html {
     border-radius: 10px;
 }
 
-body,
 .wrapper {
     width: 1440px;
+    margin: 0 auto;
 }
 
 #first-section {
@@ -94,7 +95,6 @@ body,
             font-weight: 500;
             transition: color 0.3s linear;
             position: relative;
-            cursor: pointer;
 
             &:after {
                 content: "";
@@ -167,7 +167,6 @@ body,
                 font-size: 16px;
                 line-height: 25px;
                 font-weight: 700;
-                cursor: pointer;
                 position: relative;
 
                 &::before {
@@ -261,7 +260,7 @@ body,
     }
 
     .features {
-        margin: 80px 0 120px 0;
+        margin: 100px 0 120px 0;
         position: relative;
 
         .features__img {
@@ -322,6 +321,111 @@ body,
     background-color: $background-color-2;
 
     .plans {
-        margin: 80px 0;
+        padding: 60px 0;
+
+        .plans__heading {
+            font-size: 35px;
+            font-weight: 500;
+            line-height: 50px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .plans__subheading {
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 555px;
+        }
+
+        .plans__option {
+            width: 100%;
+            margin: 60px 0;
+
+            .plans__list {
+                display: flex;
+                justify-content: space-between;
+
+                .plans__item {
+                    width: 330px;
+                    background-color: $background-color-1;
+                    border-radius: 10px;
+                    border: 2px solid #dddddd;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .plans__item-img {
+                        width: 145px;
+                        margin-top: 80px;
+                    }
+
+                    .plans__item-title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        margin: 30px 0;
+                    }
+
+                    ul {
+                        text-align: left;
+                        width: 190px;
+                        margin-top: 30px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 50px;
+
+                        li {
+                            font-size: 14px;
+                            line-height: 30px;
+                            display: flex;
+
+                            span {
+                                margin-right: 20px;
+
+                                i {
+                                    color: #2fab73;
+                                }
+                            }
+                        }
+                    }
+
+                    .plans__item-price {
+                        font-size: 25px;
+                        line-height: 30px;
+                        margin-top: auto;
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+
+                    .plans__item-button {
+                        @include button();
+                        margin-top: 20px;
+                        margin-bottom: 50px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        color: $primary-color;
+                        border: 2px solid $primary-color;
+                        border-radius: 50px;
+                        width: 175px;
+                        height: 45px;
+                    }
+
+                    &:hover {
+                        border: 2px solid $primary-color;
+
+                        .plans__item-button:hover {
+                            background-color: $primary-color;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
