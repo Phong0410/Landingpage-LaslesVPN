@@ -14,7 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -187,12 +192,122 @@
                     <img src="./assets/img/png/spotify.png" alt="spotify-img" class="sponsored__img">
                 </div>
             </div>
-            
+
             <div class="customer">
-                
+                <h2 class="customer__heading">Trusted by Thousands of Happy Customer</h2>
+                <p class="customer__subheading">These are the stories of our customers who have joined us with great
+                    pleasure when using this crazy feature.</p>
+
+                <div class="customer__slider">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <div class="slider__header">
+                                <img class="slider__header-img" src="./assets/img/png/avatar1.png" alt="avatar"></img>
+                                <div class="slider__header-info">
+                                    <p class="slider__header-name">Viezh Robert</p>
+                                    <p class="slider__header-location">Warsaw, Poland</p>
+                                </div>
+                                <div class="slider__header-rating">
+                                    <p>4.5</p><span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="slider__text">“Wow... I am very happy to use this VPN, it turned out to be more
+                                than my expectations and so far there have been no problems. LaslesVPN always the best.”
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__header">
+                                <img class="slider__header-img" src="./assets/img/png/avatar2.png" alt="avatar"></img>
+                                <div class="slider__header-info">
+                                    <p class="slider__header-name">Yessica Christy</p>
+                                    <p class="slider__header-location">Shanxi, China</p>
+                                </div>
+                                <div class="slider__header-rating">
+                                    <p>4.5</p><span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="slider__text">“I like it because I like to travel far and still can connect with
+                                high speed.”</div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__header">
+                                <img class="slider__header-img" src="./assets/img/png/avatar3.png" alt="avatar"></img>
+                                <div class="slider__header-info">
+                                    <p class="slider__header-name">Kim Young Jou</p>
+                                    <p class="slider__header-location">Seoul, South Korea</p>
+                                </div>
+                                <div class="slider__header-rating">
+                                    <p>4.5</p><span><i class="fa-solid fa-star"></i></span>
+                                </div>
+                            </div>
+                            <div class="slider__text">“This is very unusual for my business that currently requires a
+                                virtual private network that has high security.”
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrows">
+                        <span><i class="fa-solid fa-arrow-left slider-arrow-left"></i></span>
+                        <span><i class="fa-solid fa-arrow-right slider-arrow-right"></i></span>
+                    </div>
+                </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="footer__overview">
+                <div class="footer__heading">
+                    <img src="./assets/img/svg/Vector.svg" alt="logo" class="footer__heading-logo">
+                    <h1 class="footer__heading-text">Lasles<span class="footer__heading-text--bold">VPN</span></h1>
+                </div>
+                <p class="footer__text"><span>LaslesVPN</span> is a private virtual network that has unique features and
+                    has high security.</p>
+                <div class="footer__social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f footer__social-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter footer__social-icon"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram footer__social-icon"></i></a>
+                </div>
+                <p class="footer__copyright">©2020Lasles<span>VPN</span></p>
+            </div>
+            <ul class="footer__list">
+                <p class="footer__list-heading">Product</p>
+                <li class="footer__list-item"><a href="#">Download</a></li>
+                <li class="footer__list-item"><a href="#">Pricing</a></li>
+                <li class="footer__list-item"><a href="#">Locations</a></li>
+                <li class="footer__list-item"><a href="#">Server</a></li>
+                <li class="footer__list-item"><a href="#">Countries</a></li>
+                <li class="footer__list-item"><a href="#">Blog</a></li>
+            </ul>
+            <ul class="footer__list">
+                <p class="footer__list-heading">Product</p>
+                <li class="footer__list-item"><a href="#">Download</a></li>
+                <li class="footer__list-item"><a href="#">Pricing</a></li>
+                <li class="footer__list-item"><a href="#">Locations</a></li>
+                <li class="footer__list-item"><a href="#">Server</a></li>
+                <li class="footer__list-item"><a href="#">Countries</a></li>
+                <li class="footer__list-item"><a href="#">Blog</a></li>
+            </ul>
+            <ul class="footer__list">
+                <p class="footer__list-heading">Product</p>
+                <li class="footer__list-item"><a href="#">Download</a></li>
+                <li class="footer__list-item"><a href="#">Pricing</a></li>
+                <li class="footer__list-item"><a href="#">Locations</a></li>
+                <li class="footer__list-item"><a href="#">Server</a></li>
+                <li class="footer__list-item"><a href="#">Countries</a></li>
+                <li class="footer__list-item"><a href="#">Blog</a></li>
+            </ul>
+
+            <div class="footer__subscribe">
+                <div class="footer__subscribe-text">
+                    <h2 class="footer__subscribe-heading">Subscribe Now for Get Special Features!</h2>
+                    <p class="footer__subscribe-subheading">Let's subscribe with us and find the fun.</p>
+                </div>
+
+                <button class="footer__subscribe-btn primary-button">Subscribe Now</button>
+            </div>
+        </footer>
     </div>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slider.js"></script>
 </body>
 
 </html>
